@@ -47,7 +47,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
                     if len(inp) == 3:
                         os_x = np.linspace(float(inp[1]), float(inp[2]), 1000)
                     elif len(inp)==4:
-                        os_x = np.linspace(float(inp[1]), float(inp[2]), float(inp[3]))
+                        os_x = np.linspace(float(inp[1]), float(inp[2]), int(inp[3]))
                     elif len(inp) == 2:
                         os_x = np.linspace(float(inp[1]), 50, 1000)
                     input_func = MathRider(inp[0])
